@@ -1,26 +1,24 @@
 // Importa solo lo que uses
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
-// Importa las funciones que necesites de Firebase Auth si las usas
 import { getAuth } from 'firebase/auth'
 
-// Configuración de Firebase
+// Configuración de Firebase con variables de entorno
 const firebaseConfig = {
-  apiKey: "AIzaSyA63ggbRtxuPN1xlt6AltorRjJ-RmcDPbM",
-  authDomain: "mitablerokanbanpersonal.firebaseapp.com",
-  projectId: "mitablerokanbanpersonal",
-  storageBucket: "mitablerokanbanpersonal.firebasestorage.app",
-  messagingSenderId: "9672363478",
-  appId: "1:9672363478:web:fa57580e830c40878ce877",
-  measurementId: "G-BPK1XFHXSN"
-};
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+}
 
 // Inicializa Firebase
 const app = initializeApp(firebaseConfig)
 
-// Exporta los servicios que vayas a usar
+// Exporta los servicios que uses
 const db = getFirestore(app)
-// Si usas autenticación, también exporta auth
 const auth = getAuth(app)
 
 export { db, auth }
