@@ -12,6 +12,7 @@ Aplicación web desarrollada con **React + Vite** para la gestión de reparacion
 
 ### Dashboard de métricas
 ![Dashboard](/public/captura-dashboard.png)
+
 ---
 
 ## ✨ Características principales
