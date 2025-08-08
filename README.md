@@ -5,14 +5,13 @@ Aplicación web desarrollada con **React + Vite** para la gestión de reparacion
 ## 📸 Capturas de pantalla
 
 ### Tablero Kanban
-![Tablero Kanban](/captura-tablero.png)
+![Tablero Kanban](/public/captura-tablero.png)
 
 ### Entregados Hoy
-![Entregados Hoy](/captura-entregados-hoy.png)
+![Entregados Hoy](/public/captura-entregados-hoy.png)
 
 ### Dashboard de métricas
-![Dashboard](/captura-dashboard.png)
-
+![Dashboard](/public/captura-dashboard.png)
 ---
 
 ## ✨ Características principales
